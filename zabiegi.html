@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="pl" data-lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="cn.metaTitle">Zabiegi i cennik | Kosmetolog/Laser Szczecin, Natalia Perepechkina</title>
+  <meta name="description" content="Pełny cennik zabiegów: depilacja laserowa, IPL, oczyszczanie i peelingi, masaż liftingujący, mezoterapia Dermapen, egzosomy, mikroprądy, karboksyterapia. ul. 3 Maja 9, Szczecin." data-i18n-attr="content:cn.metaDesc">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%234F2638'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='36' fill='%23FBF8F4'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tw-config.js"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body id="top">
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header fixed top-0 inset-x-0 z-50">
+    <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 h-[76px] flex items-center justify-between gap-3">
+      <a href="index.html" class="flex flex-col leading-none rounded-md" aria-label="Kosmetolog/Laser Szczecin, strona główna">
+        <span class="font-display text-[1.45rem] sm:text-[1.6rem] font-semibold tracking-[-0.02em]">Kosmetolog/Laser</span>
+        <span class="text-[0.7rem] font-semibold tracking-[0.18em] text-muted mt-1">SZCZECIN</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Menu główne">
+        <a class="nav-link" href="index.html#o-mnie" data-i18n="nav.about">O mnie</a>
+        <a class="nav-link" href="index.html#zabiegi" data-i18n="nav.treatments">Zabiegi</a>
+        <a class="nav-link" href="zabiegi.html" aria-current="page" data-i18n="nav.prices">Cennik</a>
+        <a class="nav-link" href="index.html#kosmetyki" data-i18n="nav.products">Kosmetyki</a>
+        <a class="nav-link" href="index.html#opinie" data-i18n="nav.reviews">Opinie</a>
+        <a class="nav-link" href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="lang-switch" role="group" aria-label="Język strony / Язык сайта">
+          <button type="button" data-lang-btn="pl" aria-pressed="true" lang="pl">PL</button>
+          <button type="button" data-lang-btn="ru" aria-pressed="false" lang="ru">RU</button>
+        </div>
+        <a class="btn btn-primary hidden md:inline-flex !min-h-[46px] !px-5" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener" data-i18n="cta.book">Umów wizytę</a>
+        <button type="button" class="burger icon-btn lg:hidden w-11 h-11 rounded-full grid place-items-center" aria-expanded="false" aria-controls="mobile-menu" aria-label="Otwórz menu" data-i18n-attr="aria-label:nav.menu">
+          <span class="bars block"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="menu-panel lg:hidden absolute top-full inset-x-0 bg-len border-t border-ink/10 shadow-[0_30px_60px_-30px_rgba(59,27,42,0.45)]">
+      <nav class="max-w-site mx-auto px-4 sm:px-6 py-6 flex flex-col" aria-label="Menu mobilne">
+        <a class="font-display text-[1.9rem] py-2 border-b border-ink/10 hover:text-sliwka active:opacity-70" href="index.html#o-mnie" data-i18n="nav.about">O mnie</a>
+        <a class="font-display text-[1.9rem] py-2 border-b border-ink/10 hover:text-sliwka active:opacity-70" href="index.html#zabiegi" data-i18n="nav.treatments">Zabiegi</a>
+        <a class="font-display text-[1.9rem] py-2 border-b border-ink/10 text-sliwka active:opacity-70" href="zabiegi.html" aria-current="page" data-i18n="nav.prices">Cennik</a>
+        <a class="font-display text-[1.9rem] py-2 border-b border-ink/10 hover:text-sliwka active:opacity-70" href="index.html#kosmetyki" data-i18n="nav.products">Kosmetyki</a>
+        <a class="font-display text-[1.9rem] py-2 border-b border-ink/10 hover:text-sliwka active:opacity-70" href="index.html#opinie" data-i18n="nav.reviews">Opinie</a>
+        <a class="font-display text-[1.9rem] py-2 hover:text-sliwka active:opacity-70" href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+        <div class="flex flex-col sm:flex-row gap-3 mt-6">
+          <a class="btn btn-primary" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cta.bookBooksy">Umów wizytę w Booksy</span></a>
+          <a class="btn btn-ghost" href="tel:+48787017566"><i data-lucide="phone"></i>787 017 566</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pt-[120px] sm:pt-[150px] pb-10 lg:pb-14">
+      <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10">
+        <a href="index.html" class="hero-in d1 link-u !text-muted"><i data-lucide="arrow-left"></i><span data-i18n="cn.back">Strona główna</span></a>
+        <div class="grid lg:grid-cols-12 gap-8 items-end mt-6">
+          <h1 class="hero-in d2 display-xl lg:col-span-7 text-[3.2rem] sm:text-[4.6rem] lg:text-[5.6rem]" data-i18n="cn.title">Zabiegi <em>i cennik</em></h1>
+          <div class="hero-in d3 lg:col-span-5 text-muted text-[1.05rem] space-y-3">
+            <p data-i18n="cn.lead">Każdy zabieg poprzedzam rozmową i oceną skóry. Kliknij nazwę zabiegu, żeby zobaczyć, na czym polega.</p>
+            <p class="text-[0.92rem]" data-i18n="cn.promo">Podane ceny są regularne. Aktualne promocje znajdziesz w Booksy.</p>
+          </div>
+        </div>
+        <nav class="hero-in d4 mt-10 flex flex-wrap gap-2" aria-label="Kategorie zabiegów">
+          <a class="cat-chip inline-flex items-center min-h-[42px] px-4 rounded-full border border-ink/20 text-[0.9rem] font-semibold" href="#depilacja" data-i18n="cn.chip.depilacja">Depilacja laserowa</a>
+<a class="cat-chip inline-flex items-center min-h-[42px] px-4 rounded-full border border-ink/20 text-[0.9rem] font-semibold" href="#ipl" data-i18n="cn.chip.ipl">IPL</a>
+<a class="cat-chip inline-flex items-center min-h-[42px] px-4 rounded-full border border-ink/20 text-[0.9rem] font-semibold" href="#oczyszczanie" data-i18n="cn.chip.oczyszczanie">Oczyszczanie i peelingi</a>
+<a class="cat-chip inline-flex items-center min-h-[42px] px-4 rounded-full border border-ink/20 text-[0.9rem] font-semibold" href="#masaz" data-i18n="cn.chip.masaz">Masaż i rytuały</a>
+<a class="cat-chip inline-flex items-center min-h-[42px] px-4 rounded-full border border-ink/20 text-[0.9rem] font-semibold" href="#mezoterapia" data-i18n="cn.chip.mezoterapia">Mezoterapia</a>
+<a class="cat-chip inline-flex items-center min-h-[42px] px-4 rounded-full border border-ink/20 text-[0.9rem] font-semibold" href="#odmladzanie" data-i18n="cn.chip.odmladzanie">Odmładzanie</a>
+        </nav>
+      </div>
+    </section>
+
+    
+    <section id="depilacja" class="py-16 lg:py-24">
+      <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-10 lg:gap-16">
+        <div class="lg:col-span-5 lg:sticky lg:top-28 self-start">
+          <div class="reveal"><div class="photo-frame square photo-tint aspect-[4/3] lg:aspect-[4/5] max-h-[520px]"><img src="images/zabieg-laser-cialo.webp" width="998" height="1280" loading="lazy" alt=""></div></div>
+        </div>
+        <div class="lg:col-span-7">
+          <h2 class="reveal h-sec text-[2.5rem] sm:text-[3.2rem] lg:text-[3.6rem]" data-i18n="cn.depilacja.t">Depilacja <em>laserowa</em></h2>
+          <p class="reveal mt-5 text-muted text-[1.04rem] max-w-[38rem]" data-i18n="cn.depilacja.i">Laser z systemem chłodzenia skutecznie i bezpiecznie redukuje niechciane owłosienie. Zabieg jest komfortowy i praktycznie bezbolesny, a Ty zapominasz o codziennym goleniu, podrażnieniach i wrastających włoskach. Najlepszy efekt daje seria zabiegów dobrana do rodzaju skóry i włosów.</p>
+          
+          <ul class="reveal mt-8 border-b border-ink/10">
+            <li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.0">Bikini głębokie + pachy</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">30</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">270 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.1">Bikini + pachy + łydki</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">90</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">350 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.2">Bikini głębokie + nogi</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">60</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">380 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.3">Całe ciało</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">150</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">900 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.4">Bikini głębokie</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">30</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">180 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.5">Pachy</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">30</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">150 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.6">Nogi</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">60</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">320 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.7">Uda</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">35</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">200 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.8">Łydki</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">60</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">180 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.9">Ręce</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">30</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">140 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.10">Pośladki</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">30</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">150 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.11">Brzuch</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">30</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">250 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.12">Linia brzucha</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">15</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">50 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.13">Plecy</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">60</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">400 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.14">Klatka piersiowa</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">30</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">200 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.15">Otoczki brodawek</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">30</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">90 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.16">Wąsik</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">15</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">90 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.17">Broda</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">15</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">90 zł</span></span></span>
+            </li><li class="price-row flex items-baseline justify-between gap-4 py-4">
+              <span class="svc-name font-medium text-[1.02rem]" data-i18n="cn.depilacja.18">Szyja</span>
+              <span class="flex items-baseline gap-5 flex-none"><span class="min text-muted text-[0.85rem]">15</span><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">90 zł</span></span></span>
+            </li>
+          </ul>
+          <a class="reveal btn btn-primary mt-8" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cta.bookBooksy">Umów wizytę w Booksy</span><i data-lucide="arrow-right" class="arr"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ipl" class="py-16 lg:py-24 border-t border-ink/10">
+      <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-10 lg:gap-16">
+        <div class="lg:col-span-5 lg:sticky lg:top-28 self-start">
+          <div class="reveal"><div class="photo-frame square photo-tint aspect-[4/3] lg:aspect-[4/5] max-h-[520px]"><img src="images/zabieg-laser-twarz.webp" width="848" height="1280" loading="lazy" alt=""></div></div>
+        </div>
+        <div class="lg:col-span-7">
+          <h2 class="reveal h-sec text-[2.5rem] sm:text-[3.2rem] lg:text-[3.6rem]" data-i18n="cn.ipl.t">IPL: przebarwienia <em>i naczynka</em></h2>
+          <p class="reveal mt-5 text-muted text-[1.04rem] max-w-[38rem]" data-i18n="cn.ipl.i">Światło IPL działa na melaninę i hemoglobinę, czyli barwniki, które odpowiadają za przebarwienia i zaczerwienienia. Dobrze dobrane parametry stopniowo zmniejszają widoczność przebarwień i naczynek oraz wyrównują koloryt. Pomaga przy couperose, czerwonych śladach po trądziku i oznakach fotouszkodzeń. Zabieg wykonuję po wcześniejszej kwalifikacji skóry.</p>
+          <p class="mt-4 flex gap-2 text-[0.92rem] text-sliwka font-semibold"><i data-lucide="sparkles" class="w-4 h-4 flex-none mt-1"></i><span data-i18n="cn.ipl.note">Nowa technologia IPL w gabinecie. Aktualną cenę premierową sprawdzisz w Booksy.</span></p>
+          <ul class="reveal mt-8 border-b border-ink/10">
+            <li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.ipl.0">Pojedyncza strefa</span><span class="min block text-muted text-[0.85rem] mt-1">30</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">199 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.ipl.0.d">Wybrana niewielka strefa, np. skrzydełka nosa, policzki, czoło lub broda. Przy pojedynczych przebarwieniach, naczynkach lub czerwonych śladach po trądziku.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.ipl.1">Twarz: przebarwienia, naczynka, ślady po trądziku</span><span class="min block text-muted text-[0.85rem] mt-1">45</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">399 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.ipl.1.d">Terapia całej twarzy przy przebarwieniach, nierównym kolorycie, couperose, zaczerwienieniu i czerwonych śladach po trądziku.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.ipl.2">Twarz + szyja</span><span class="min block text-muted text-[0.85rem] mt-1">55</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">499 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.ipl.2.d">Ta sama terapia rozszerzona o szyję, żeby koloryt był równy aż do dekoltu.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.ipl.3">Twarz + szyja + dekolt</span><span class="min block text-muted text-[0.85rem] mt-1">75</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">590 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.ipl.3.d">Kompleksowa terapia IPL twarzy, szyi i dekoltu dla wyrównania kolorytu.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li>
+          </ul>
+          <a class="reveal btn btn-primary mt-8" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cta.bookBooksy">Umów wizytę w Booksy</span><i data-lucide="arrow-right" class="arr"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="oczyszczanie" class="py-16 lg:py-24 border-t border-ink/10">
+      <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-10 lg:gap-16">
+        <div class="lg:col-span-5 lg:sticky lg:top-28 self-start">
+          <div class="reveal"><div class="photo-frame square photo-tint aspect-[4/3] lg:aspect-[4/5] max-h-[520px]"><img src="images/zabieg-oczyszczanie.webp" width="850" height="1280" loading="lazy" alt=""></div></div>
+        </div>
+        <div class="lg:col-span-7">
+          <h2 class="reveal h-sec text-[2.5rem] sm:text-[3.2rem] lg:text-[3.6rem]" data-i18n="cn.oczyszczanie.t">Oczyszczanie <em>i peelingi</em></h2>
+          <p class="reveal mt-5 text-muted text-[1.04rem] max-w-[38rem]" data-i18n="cn.oczyszczanie.i">Dla skóry szarej, zanieczyszczonej, z zaskórnikami lub nierówną strukturą. Łączę kilka metod, dzięki czemu skóra jest wyraźnie gładsza, świeższa i bardziej promienna.</p>
+          
+          <ul class="reveal mt-8 border-b border-ink/10">
+            <li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.oczyszczanie.0">Kombinowane oczyszczanie twarzy z peelingiem</span><span class="min block text-muted text-[0.85rem] mt-1">95</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">250 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.oczyszczanie.0.d">Demakijaż i przygotowanie skóry, oczyszczanie ultradźwiękowe, manualne usuwanie zaskórników otwartych i zamkniętych oraz prosaków, a na koniec peeling medyczny dobrany do potrzeb Twojej skóry.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.oczyszczanie.1">Oczyszczanie pleców</span><span class="min block text-muted text-[0.85rem] mt-1">90</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">400 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.oczyszczanie.1.d">Usuwa zanieczyszczenia, nadmiar sebum i zrogowaciały naskórek. Dla skóry ze skłonnością do zaskórników i stanów zapalnych.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.oczyszczanie.2">Peeling twarzy</span><span class="min block text-muted text-[0.85rem] mt-1">30</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">150 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.oczyszczanie.2.d">Usuwa martwe komórki naskórka, wygładza strukturę skóry, wyrównuje koloryt i przygotowuje cerę na składniki aktywne.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.oczyszczanie.3">Peeling PRX-T33 (Yellow peel)</span><span class="min block text-muted text-[0.85rem] mt-1">30</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">250 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.oczyszczanie.3.d">Bezinwazyjny peeling łączący kwas TCA i nadtlenek wodoru. Regeneruje, ujędrnia, wygładza zmarszczki i wyrównuje koloryt bez długiej rekonwalescencji. Twarz, szyja i dekolt.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li>
+          </ul>
+          <a class="reveal btn btn-primary mt-8" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cta.bookBooksy">Umów wizytę w Booksy</span><i data-lucide="arrow-right" class="arr"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="masaz" class="py-16 lg:py-24 border-t border-ink/10">
+      <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-10 lg:gap-16">
+        <div class="lg:col-span-5 lg:sticky lg:top-28 self-start">
+          <div class="reveal"><div class="photo-frame square aspect-[4/3] lg:aspect-[4/5] max-h-[520px]"><video data-autoplay muted loop playsinline preload="none" poster="videos/masaz-twarzy-4.webp" src="videos/masaz-twarzy-4.mp4" class="w-full h-full object-cover"></video></div></div>
+        </div>
+        <div class="lg:col-span-7">
+          <h2 class="reveal h-sec text-[2.5rem] sm:text-[3.2rem] lg:text-[3.6rem]" data-i18n="cn.masaz.t">Masaż liftingujący <em>i rytuały</em></h2>
+          <p class="reveal mt-5 text-muted text-[1.04rem] max-w-[38rem]" data-i18n="cn.masaz.i">To nie jest zwykły masaż relaksacyjny, tylko terapia manualna dobrana do Twojej twarzy. Pracuję z napięciem mięśni, owalem, obrzękami i jakością skóry. A przy okazji dostajesz godzinę głębokiego odprężenia.</p>
+          
+          <ul class="reveal mt-8 border-b border-ink/10">
+            <li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.masaz.0">Masaż liftingujący twarzy</span><span class="min block text-muted text-[0.85rem] mt-1">60</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">190 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.masaz.0.d">Najpierw oceniam kondycję mięśni i główny problem: zmarszczki na czole, bruzdy nosowo-wargowe, utratę jędrności, drugi podbródek lub obrzęki. Potem pracuję z dekoltem, szyją, twarzą, mięśniami żucia i skórą głowy.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.masaz.1">Hollywood Glow, rytuał rozświetlający</span><span class="min block text-muted text-[0.85rem] mt-1">55</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">220 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.masaz.1.d">Przygotowanie skóry z elementami masażu, etap złuszczający i regenerująca maska peptydowa z masażem twarzy. Rozjaśnia przebarwienia, wyrównuje koloryt, wygładza i intensywnie nawilża.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.masaz.2">Masaż twarzy z mikroprądami</span><span class="min block text-muted text-[0.85rem] mt-1">90</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">280 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.masaz.2.d">Masaż liftingujący połączony z mikroprądami, które dodatkowo stymulują mięśnie twarzy.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.masaz.3">Rytuał liftingujący Premium: masaż + glow</span><span class="min block text-muted text-[0.85rem] mt-1">120</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">350 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.masaz.3.d">Masaż dekoltu, szyi, twarzy i skóry głowy, peeling rozświetlający, ampułka dobrana do skóry wprowadzana mikroprądami i kojąca maska alginatowa. Owal, blask i głębokie nawilżenie w jednej wizycie.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li>
+          </ul>
+          <a class="reveal btn btn-primary mt-8" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cta.bookBooksy">Umów wizytę w Booksy</span><i data-lucide="arrow-right" class="arr"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mezoterapia" class="py-16 lg:py-24 border-t border-ink/10">
+      <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-10 lg:gap-16">
+        <div class="lg:col-span-5 lg:sticky lg:top-28 self-start">
+          <div class="reveal"><div class="photo-frame square photo-tint aspect-[4/3] lg:aspect-[4/5] max-h-[520px]"><img src="images/zabieg-aparatura.webp" width="852" height="1280" loading="lazy" alt=""></div></div>
+        </div>
+        <div class="lg:col-span-7">
+          <h2 class="reveal h-sec text-[2.5rem] sm:text-[3.2rem] lg:text-[3.6rem]" data-i18n="cn.mezoterapia.t">Mezoterapia <em>i egzosomy</em></h2>
+          <p class="reveal mt-5 text-muted text-[1.04rem] max-w-[38rem]" data-i18n="cn.mezoterapia.i">Mezoterapia mikroigłowa Dermapen pobudza naturalną regenerację skóry. Składniki aktywne dobieram w konsultacji przed zabiegiem, a pracuję na jednorazowych, sterylnych kartridżach.</p>
+          
+          <ul class="reveal mt-8 border-b border-ink/10">
+            <li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.mezoterapia.0">Mikronakłuwanie Dermapen</span><span class="min block text-muted text-[0.85rem] mt-1">75</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="from">300 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.mezoterapia.0.d">Twarz, szyja i dekolt, a także przebarwienia, wiotkość skóry na ciele, blizny, rozstępy i nadmierne wypadanie włosów. Zalecana seria to 4 do 5 zabiegów. W cenie peeling dobrany do skóry i maska kojąca.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.mezoterapia.1">Egzosomy: peeling + Dermapen + maska</span><span class="min block text-muted text-[0.85rem] mt-1">60</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">950 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.mezoterapia.1.d">Kompleksowy zabieg łączący Dermapen, peeling i maskę z egzosomami. Intensywnie regeneruje skórę, pobudza produkcję kolagenu i przywraca jej blask.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li>
+          </ul>
+          <a class="reveal btn btn-primary mt-8" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cta.bookBooksy">Umów wizytę w Booksy</span><i data-lucide="arrow-right" class="arr"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="odmladzanie" class="py-16 lg:py-24 border-t border-ink/10">
+      <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-10 lg:gap-16">
+        <div class="lg:col-span-5 lg:sticky lg:top-28 self-start">
+          <div class="reveal"><div class="photo-frame square photo-tint aspect-[4/3] lg:aspect-[4/5] max-h-[520px]"><img src="images/natalia-portret.webp" width="807" height="1280" loading="lazy" alt=""></div></div>
+        </div>
+        <div class="lg:col-span-7">
+          <h2 class="reveal h-sec text-[2.5rem] sm:text-[3.2rem] lg:text-[3.6rem]" data-i18n="cn.odmladzanie.t">Odmładzanie <em>bez igieł</em></h2>
+          <p class="reveal mt-5 text-muted text-[1.04rem] max-w-[38rem]" data-i18n="cn.odmladzanie.i">Zabiegi dla skóry, która traci jędrność i blask. Pobudzają krążenie, dotleniają tkanki i dają efekt naturalnego odświeżenia twarzy.</p>
+          
+          <ul class="reveal mt-8 border-b border-ink/10">
+            <li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.odmladzanie.0">Mikroprądy</span><span class="min block text-muted text-[0.85rem] mt-1">60</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">200 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.odmladzanie.0.d">Mikroprądy stymulują mięśnie twarzy, poprawiają krążenie i ujędrniają skórę. Liftingują rysy i wygładzają zmarszczki.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.odmladzanie.1">Karboksyterapia</span><span class="min block text-muted text-[0.85rem] mt-1">60</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">220 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.odmladzanie.1.d">Kontrolowane podanie dwutlenku węgla pobudza mikrokrążenie, dotlenia tkanki i stymuluje kolagen. Na cienie pod oczami, wiotkość skóry, blizny, rozstępy i miejscowy cellulit.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li><li><details class="price-row">
+              <summary class="flex items-center justify-between gap-4 py-5">
+                <span class="min-w-0"><span class="svc-name block font-semibold text-[1.06rem] leading-snug" data-i18n="cn.odmladzanie.2">Laserowe odmładzanie twarzy, szyi i dekoltu</span><span class="min block text-muted text-[0.85rem] mt-1">60</span></span>
+                <span class="flex items-center gap-4 flex-none"><span class="font-display text-[1.5rem] leading-none font-semibold whitespace-nowrap"><span class="">400 zł</span></span><span class="chev w-9 h-9 rounded-full border border-ink/20 grid place-items-center"><i data-lucide="chevron-down" class="w-4 h-4"></i></span></span>
+              </summary>
+              <div class="pb-6 pr-2 sm:pr-14 text-muted text-[0.97rem]">
+                <p data-i18n="cn.odmladzanie.2.d">Zabieg laserowy poprawiający napięcie i jakość skóry. Szczegóły i kwalifikację omawiamy przed zabiegiem.</p>
+                <a class="link-u mt-4" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cn.bookThis">Zarezerwuj w Booksy</span><i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </details></li>
+          </ul>
+          <a class="reveal btn btn-primary mt-8" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cta.bookBooksy">Umów wizytę w Booksy</span><i data-lucide="arrow-right" class="arr"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="on-dark py-20 lg:py-24">
+      <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-10 items-end">
+        <div class="lg:col-span-7">
+          <h2 class="reveal h-sec text-[2.6rem] sm:text-[3.6rem] lg:text-[4.2rem]" data-i18n="cn.ctaTitle">Nie wiesz, <em>od czego zacząć?</em></h2>
+          <p class="reveal mt-5 text-mleko/75 text-[1.05rem] max-w-[34rem]" data-i18n="cn.ctaLead">Zadzwoń albo umów pierwszą wizytę. Ocenię skórę i zaproponuję plan, który ma sens właśnie dla Ciebie. Rozmawiam po polsku i po rosyjsku.</p>
+        </div>
+        <div class="reveal lg:col-span-5 flex flex-col sm:flex-row lg:justify-end gap-3">
+          <a class="btn btn-light" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener"><span data-i18n="cta.bookBooksy">Umów wizytę w Booksy</span><i data-lucide="arrow-right" class="arr"></i></a>
+          <a class="btn btn-outline-light" href="tel:+48787017566"><i data-lucide="phone"></i>787 017 566</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="on-dark border-t border-mleko/10 pb-28 md:pb-10 pt-10">
+    <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row gap-6 md:items-center justify-between text-[0.9rem] text-mleko/60">
+      <div>
+        <p class="font-display text-[1.5rem] text-mleko font-semibold leading-none">Kosmetolog/Laser Szczecin</p>
+        <p class="mt-2">Nataliia Perepechkina · ul. 3 Maja 9, 70-214 Szczecin · <a class="hover:text-mleko" href="tel:+48787017566">787 017 566</a></p>
+        <p class="mt-1"><span data-i18n="contact.short">pon. do pt. 10:00 do 20:00, sob. 10:00 do 15:30</span></p>
+      </div>
+      <nav class="flex flex-wrap gap-x-6 gap-y-2" aria-label="Stopka">
+        <a class="hover:text-mleko active:opacity-70" href="index.html" data-i18n="cn.back">Strona główna</a>
+        <a class="hover:text-mleko active:opacity-70" href="index.html#kosmetyki" data-i18n="nav.products">Kosmetyki</a>
+        <a class="hover:text-mleko active:opacity-70" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener">Booksy</a>
+        <span>© <span data-year>2026</span></span>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="mbar md:hidden fixed bottom-0 inset-x-0 z-40 p-3">
+    <div class="flex gap-2 p-2 rounded-full bg-mleko" style="box-shadow: var(--shadow-3)">
+      <a class="btn btn-primary flex-1 !min-h-[48px]" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener" data-i18n="cta.book">Umów wizytę</a>
+      <a class="btn btn-ghost !min-h-[48px] !px-0 w-12" href="tel:+48787017566" aria-label="Zadzwoń: 787 017 566" data-i18n-attr="aria-label:cta.callAria"><i data-lucide="phone"></i></a>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/i18n-ru.js"></script>
+  <script src="assets/i18n-ru-cennik.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
