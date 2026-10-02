@@ -2,7 +2,9 @@
 <html lang="pl" data-lang="pl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F5EFE8">
+  <meta name="format-detection" content="telephone=no">
   <title data-i18n="meta.title">Kosmetolog Szczecin | Natalia Perepechkina, depilacja laserowa, IPL, masaż twarzy</title>
   <meta name="description" content="Kameralny gabinet kosmetologiczny przy ul. 3 Maja 9 w Szczecinie. Kosmetolog z wykształceniem medycznym i ponad 7-letnim doświadczeniem. Depilacja laserowa, IPL, oczyszczanie, masaż liftingujący, mezoterapia. Wizyty po polsku i rosyjsku." data-i18n-attr="content:meta.desc">
   <meta property="og:title" content="Kosmetolog/Laser Szczecin | Natalia Perepechkina">
@@ -42,9 +44,9 @@
   <!-- ================= HEADER ================= -->
   <header class="site-header fixed top-0 inset-x-0 z-50">
     <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 h-[76px] flex items-center justify-between gap-3">
-      <a href="#top" class="flex flex-col leading-none rounded-md" aria-label="Kosmetolog/Laser Szczecin, strona główna">
-        <span class="font-display text-[1.45rem] sm:text-[1.6rem] font-semibold tracking-[-0.02em]">Kosmetolog/Laser</span>
-        <span class="text-[0.7rem] font-semibold tracking-[0.18em] text-muted mt-1">SZCZECIN</span>
+      <a href="#top" class="flex flex-col leading-none rounded-md" aria-label="Nataliia Perepechkina, kosmetolog Szczecin, strona główna" data-i18n-attr="aria-label:brand.aria">
+        <span class="font-display text-[1.3rem] sm:text-[1.6rem] font-semibold tracking-[-0.02em] whitespace-nowrap">Nataliia Perepechkina</span>
+        <span class="text-[0.68rem] font-semibold tracking-[0.18em] text-muted mt-1" data-i18n="brand.sub">KOSMETOLOG · SZCZECIN</span>
       </a>
 
       <nav class="hidden lg:flex items-center gap-8" aria-label="Menu główne">
@@ -133,7 +135,7 @@
       <div class="max-w-site mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
         <div class="reveal lg:col-span-5 relative">
           <div class="photo-frame square photo-tint aspect-[4/5]">
-            <img src="images/zabieg-laser-cialo.webp" width="998" height="1280" loading="lazy" alt="Natalia podczas zabiegu depilacji laserowej" data-i18n-attr="alt:alt.laser">
+            <img src="images/zabieg-laser-cialo.webp" width="998" height="1280" loading="lazy" decoding="async" alt="Natalia podczas zabiegu depilacji laserowej" data-i18n-attr="alt:alt.laser">
           </div>
           <div class="card absolute -bottom-6 right-4 sm:-right-6 max-w-[15rem] p-5" style="box-shadow: var(--shadow-3)">
             <p class="font-display text-[1.35rem] leading-tight italic" data-i18n="about.badge">Zabieg dobieram do skóry, nie do cennika.</p>
@@ -207,9 +209,9 @@
           <p class="reveal lg:col-span-4 lg:col-start-9 text-muted text-[1.05rem]" data-i18n="tr.lead">Zabiegi pogrupowałam według potrzeb skóry. Szczegóły, czas trwania i ceny znajdziesz w cenniku.</p>
         </div>
 
-        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+        <div class="m-rail mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6" data-rail role="region" aria-label="Zabiegi, przewiń w bok" data-i18n-attr="aria-label:rail.tr">
           <a href="zabiegi.html#depilacja" class="tile reveal aspect-square sm:aspect-[4/5]">
-            <img src="videos/laser-cialo.webp" loading="lazy" alt="" width="464" height="848">
+            <img src="videos/laser-cialo.webp" loading="lazy" decoding="async" alt="" width="464" height="848">
             <span class="tile-cap">
               <span class="flex items-end justify-between gap-4">
                 <span>
@@ -222,7 +224,7 @@
             </span>
           </a>
           <a href="zabiegi.html#ipl" class="tile reveal aspect-square sm:aspect-[4/5]">
-            <img src="images/zabieg-laser-twarz.webp" loading="lazy" alt="" width="848" height="1280">
+            <img src="images/zabieg-laser-twarz.webp" loading="lazy" decoding="async" alt="" width="848" height="1280">
             <span class="tile-cap">
               <span class="flex items-end justify-between gap-4">
                 <span>
@@ -235,7 +237,7 @@
             </span>
           </a>
           <a href="zabiegi.html#oczyszczanie" class="tile reveal aspect-square sm:aspect-[4/5]">
-            <img src="images/zabieg-oczyszczanie.webp" loading="lazy" alt="" width="850" height="1280">
+            <img src="images/zabieg-oczyszczanie.webp" loading="lazy" decoding="async" alt="" width="850" height="1280">
             <span class="tile-cap">
               <span class="flex items-end justify-between gap-4">
                 <span>
@@ -248,7 +250,7 @@
             </span>
           </a>
           <a href="zabiegi.html#masaz" class="tile reveal aspect-square sm:aspect-[4/5]">
-            <img src="videos/masaz-twarzy-1.webp" loading="lazy" alt="" width="464" height="848">
+            <img src="videos/masaz-twarzy-1.webp" loading="lazy" decoding="async" alt="" width="464" height="848">
             <span class="tile-cap">
               <span class="flex items-end justify-between gap-4">
                 <span>
@@ -261,7 +263,7 @@
             </span>
           </a>
           <a href="zabiegi.html#mezoterapia" class="tile reveal aspect-square sm:aspect-[4/5]">
-            <img src="images/zabieg-aparatura.webp" loading="lazy" alt="" width="852" height="1280">
+            <img src="images/zabieg-aparatura.webp" loading="lazy" decoding="async" alt="" width="852" height="1280">
             <span class="tile-cap">
               <span class="flex items-end justify-between gap-4">
                 <span>
@@ -274,7 +276,7 @@
             </span>
           </a>
           <a href="zabiegi.html#odmladzanie" class="tile reveal aspect-square sm:aspect-[4/5]">
-            <img src="videos/laser-twarz.webp" loading="lazy" alt="" width="576" height="1280">
+            <img src="videos/laser-twarz.webp" loading="lazy" decoding="async" alt="" width="576" height="1280">
             <span class="tile-cap">
               <span class="flex items-end justify-between gap-4">
                 <span>
@@ -390,13 +392,13 @@
           </div>
           <div class="lg:col-span-8 grid grid-cols-2 gap-4 sm:gap-5">
             <figure class="reveal col-span-2 photo-frame square photo-tint aspect-[16/11]">
-              <img src="images/gabinet-wnetrze.webp" loading="lazy" width="1280" height="1172" alt="Wnętrze gabinetu z łóżkiem zabiegowym i ciepłym światłem" data-i18n-attr="alt:alt.studio1">
+              <img src="images/gabinet-wnetrze.webp" loading="lazy" decoding="async" width="1280" height="1172" alt="Wnętrze gabinetu z łóżkiem zabiegowym i ciepłym światłem" data-i18n-attr="alt:alt.studio1">
             </figure>
             <figure class="reveal photo-frame square photo-tint aspect-[4/5]">
-              <img src="images/gabinet-stanowisko.webp" loading="lazy" width="1022" height="1280" alt="Stanowisko zabiegowe w gabinecie" data-i18n-attr="alt:alt.studio2">
+              <img src="images/gabinet-stanowisko.webp" loading="lazy" decoding="async" width="1022" height="1280" alt="Stanowisko zabiegowe w gabinecie" data-i18n-attr="alt:alt.studio2">
             </figure>
             <figure class="reveal photo-frame square photo-tint aspect-[4/5] mt-10 sm:mt-16">
-              <img src="images/gabinet-kacik.webp" loading="lazy" width="591" height="1048" alt="Kącik wypoczynkowy przy oknie" data-i18n-attr="alt:alt.studio3">
+              <img src="images/gabinet-kacik.webp" loading="lazy" decoding="async" width="591" height="1048" alt="Kącik wypoczynkowy przy oknie" data-i18n-attr="alt:alt.studio3">
             </figure>
           </div>
         </div>
@@ -411,10 +413,10 @@
           <p class="reveal lg:col-span-5 text-muted text-[1.05rem]" data-i18n="prod.lead">Efekt z gabinetu trzyma się dłużej, gdy w domu używasz właściwych kosmetyków. Polecam i sprzedaję koreańską linię ZISU'C. Dobiorę ją do Twojej skóry podczas wizyty albo przez telefon.</p>
         </div>
 
-        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="m-rail mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5" data-rail role="region" aria-label="Kosmetyki, przewiń w bok" data-i18n-attr="aria-label:rail.prod">
           <article class="product reveal card p-3 pb-6 flex flex-col">
             <div class="media">
-              <img src="images/zisuc-galacthione.webp" loading="lazy" width="720" height="1280" alt="ZISU'C Galacthione Ampoule Pad, słoik z płatkami">
+              <img src="images/zisuc-galacthione.webp" loading="lazy" decoding="async" width="720" height="1280" alt="ZISU'C Galacthione Ampoule Pad, słoik z płatkami">
               <video muted loop playsinline preload="none" src="videos/zisuc-galacthione.mp4" aria-hidden="true"></video>
             </div>
             <div class="px-3 pt-5 flex flex-col flex-1">
@@ -426,7 +428,7 @@
           </article>
           <article class="product reveal card p-3 pb-6 flex flex-col">
             <div class="media">
-              <img src="images/zisuc-kira-serum.webp" loading="lazy" width="720" height="1280" alt="ZISU'C Kira60 C-Tide Serum">
+              <img src="images/zisuc-kira-serum.webp" loading="lazy" decoding="async" width="720" height="1280" alt="ZISU'C Kira60 C-Tide Serum">
               <video muted loop playsinline preload="none" src="videos/zisuc-serum.mp4" aria-hidden="true"></video>
             </div>
             <div class="px-3 pt-5 flex flex-col flex-1">
@@ -438,7 +440,7 @@
           </article>
           <article class="product reveal card p-3 pb-6 flex flex-col">
             <div class="media">
-              <img src="images/zisuc-kira-krem.webp" loading="lazy" width="720" height="1280" alt="ZISU'C Kira60 C-Tide Cream i zestaw podróżny">
+              <img src="images/zisuc-kira-krem.webp" loading="lazy" decoding="async" width="720" height="1280" alt="ZISU'C Kira60 C-Tide Cream i zestaw podróżny">
               <video muted loop playsinline preload="none" src="videos/zisuc-kira-oczy.mp4" aria-hidden="true"></video>
             </div>
             <div class="px-3 pt-5 flex flex-col flex-1">
@@ -450,7 +452,7 @@
           </article>
           <article class="product reveal card p-3 pb-6 flex flex-col">
             <div class="media">
-              <img src="images/zisuc-ebap-przed-po.webp" loading="lazy" width="774" height="1280" class="object-top" alt="ZISU'C E-BAP Powder Cleanser, materiał producenta przed i po">
+              <img src="images/zisuc-ebap-przed-po.webp" loading="lazy" decoding="async" width="774" height="1280" class="object-top" alt="ZISU'C E-BAP Powder Cleanser, materiał producenta przed i po">
             </div>
             <div class="px-3 pt-5 flex flex-col flex-1">
               <h3 class="font-display text-[1.6rem] leading-tight font-semibold">E-BAP Powder Cleanser</h3>
@@ -463,8 +465,8 @@
 
         <div class="reveal mt-8 grid md:grid-cols-12 gap-6 items-center card p-5 sm:p-8">
           <div class="md:col-span-5 grid grid-cols-2 gap-3">
-            <img src="images/zisuc-galacthione-przed-po.webp" loading="lazy" width="777" height="1280" class="rounded-xl aspect-[3/4] object-cover object-top w-full" alt="Galacthione Ampoule Pad: przed i po, materiał producenta">
-            <img src="images/zisuc-ebap-przed-po.webp" loading="lazy" width="774" height="1280" class="rounded-xl aspect-[3/4] object-cover object-top w-full" alt="E-BAP Powder Cleanser: przed i po, materiał producenta">
+            <img src="images/zisuc-galacthione-przed-po.webp" loading="lazy" decoding="async" width="777" height="1280" class="rounded-xl aspect-[3/4] object-cover object-top w-full" alt="Galacthione Ampoule Pad: przed i po, materiał producenta">
+            <img src="images/zisuc-ebap-przed-po.webp" loading="lazy" decoding="async" width="774" height="1280" class="rounded-xl aspect-[3/4] object-cover object-top w-full" alt="E-BAP Powder Cleanser: przed i po, materiał producenta">
           </div>
           <div class="md:col-span-7 md:pl-6">
             <h3 class="font-display text-[2rem] sm:text-[2.4rem] leading-tight font-semibold" data-i18n="prod.boxTitle">Nie kupuj w ciemno</h3>
@@ -495,7 +497,7 @@
           </div>
         </div>
 
-        <div class="mt-12 columns-1 md:columns-2 lg:columns-3 gap-5 [&>*]:mb-5">
+        <div class="m-rail mt-12 columns-1 md:columns-2 lg:columns-3 gap-5 md:[&>*]:mb-5" data-rail role="region" aria-label="Opinie klientek, przewiń w bok" data-i18n-attr="aria-label:rail.rev">
           <figure class="reveal card p-7 break-inside-avoid">
             <span class="stars" aria-label="5/5"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></span>
             <blockquote class="mt-4 font-display text-[1.45rem] leading-snug" data-i18n="rev.r1">„Pani Natalia to kosmetyczka, której tak długo szukałam! Wysoka jakość usług i ogromny profesjonalizm. Uwielbiam kompleksowy masaż twarzy i maseczki, efekt jest błyskawiczny.”</blockquote>
@@ -602,7 +604,7 @@
           </div>
           <div class="reveal lg:col-span-6">
             <div class="rounded-[20px] overflow-hidden h-full min-h-[340px] border border-mleko/10" style="box-shadow: var(--shadow-3)">
-              <iframe title="Mapa dojazdu: ul. 3 Maja 9, Szczecin" class="w-full h-full min-h-[340px] grayscale-[30%]" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Kosmetolog_Laser+Szczecin,+3+Maja+9,+70-214+Szczecin&output=embed"></iframe>
+              <iframe title="Mapa dojazdu: ul. 3 Maja 9, Szczecin" class="w-full h-full min-h-[340px] grayscale-[30%]" loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Kosmetolog_Laser+Szczecin,+3+Maja+9,+70-214+Szczecin&output=embed"></iframe>
             </div>
           </div>
         </div>
@@ -616,7 +618,7 @@
         <p class="font-display text-[1.5rem] text-mleko font-semibold leading-none">Kosmetolog/Laser Szczecin</p>
         <p class="mt-2">Nataliia Perepechkina · ul. 3 Maja 9, 70-214 Szczecin · <a class="hover:text-mleko" href="tel:+48787017566">787 017 566</a></p>
       </div>
-      <nav class="flex flex-wrap gap-x-6 gap-y-2" aria-label="Stopka">
+      <nav class="flex flex-wrap gap-x-6 gap-y-1 [&>a]:py-2" aria-label="Stopka">
         <a class="hover:text-mleko active:opacity-70" href="zabiegi.html" data-i18n="nav.prices">Cennik</a>
         <a class="hover:text-mleko active:opacity-70" href="#kosmetyki" data-i18n="nav.products">Kosmetyki</a>
         <a class="hover:text-mleko active:opacity-70" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener">Booksy</a>
@@ -626,7 +628,7 @@
   </footer>
 
   <!-- Mobile booking bar -->
-  <div class="mbar md:hidden fixed bottom-0 inset-x-0 z-40 p-3">
+  <div class="mbar md:hidden fixed bottom-0 inset-x-0 z-40 px-3 pt-3">
     <div class="flex gap-2 p-2 rounded-full bg-mleko" style="box-shadow: var(--shadow-3)">
       <a class="btn btn-primary flex-1 !min-h-[48px]" href="https://booksy.com/pl-pl/201522_kosmetolog-laser-szczecin_salon-kosmetyczny_18078_szczecin" target="_blank" rel="noopener" data-i18n="cta.book">Umów wizytę</a>
       <a class="btn btn-ghost !min-h-[48px] !px-0 w-12" href="tel:+48787017566" aria-label="Zadzwoń: 787 017 566" data-i18n-attr="aria-label:cta.callAria"><i data-lucide="phone"></i></a>

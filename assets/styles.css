@@ -210,3 +210,51 @@ html[lang="ru"] .from::before { content: 'от '; }
 @media (min-width: 1024px) {
   html[lang="ru"] .hero-title { font-size: 3.7rem; }
 }
+
+/* ---------- Mobile best practices ---------- */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { -webkit-tap-highlight-color: transparent; }
+.mbar { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
+.menu-open ~ .mbar, body.menu-locked .mbar { transform: translateY(120%); }
+body.menu-locked { overflow: hidden; }
+@media (max-width: 767px) {
+  .lang-switch button { height: 38px; min-width: 44px; }
+}
+
+/* ---------- Mobile rails: horizontal scroll with snap ---------- */
+.rail-dots { display: none; }
+@media (max-width: 767px) {
+  .m-rail {
+    display: flex !important; columns: auto !important;
+    gap: 14px; overflow-x: auto; overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory; scrollbar-width: none;
+    margin-inline: -16px; padding: 4px 16px 18px; scroll-padding-inline: 16px;
+  }
+  .m-rail::-webkit-scrollbar { display: none; }
+  .m-rail > * { flex: 0 0 84%; scroll-snap-align: start; margin-bottom: 0 !important; }
+  .m-rail > .tile { aspect-ratio: 4 / 5; }
+  .m-rail .product .media { aspect-ratio: 1 / 1; }
+  .m-rail > .reveal { opacity: 1; transform: none; }
+  .m-rail:focus-visible { outline: 2px solid var(--sliwka); outline-offset: -2px; border-radius: 12px; }
+
+  .rail-dots { display: flex; justify-content: center; gap: 2px; margin-top: 6px; }
+  .rail-dots button { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 999px; }
+  .rail-dots button::before {
+    content: ''; width: 7px; height: 7px; border-radius: 999px; background: rgba(30, 24, 22, 0.22);
+    transition: transform 0.4s var(--spring), background-color 0.3s var(--ease);
+  }
+  .rail-dots button[aria-current="true"]::before { background: var(--sliwka); transform: scale(1.35); }
+  .rail-dots button:active::before { transform: scale(0.8); }
+
+  /* category chips on the price list: one swipeable row */
+  .m-chips {
+    flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain;
+    margin-inline: -16px; padding: 2px 16px 6px; scroll-padding-inline: 16px; scroll-snap-type: x proximity;
+  }
+  .m-chips::-webkit-scrollbar { display: none; }
+  .m-chips > * { flex: none; scroll-snap-align: start; }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .m-rail, .m-chips { margin-inline: -24px; padding-inline: 24px; scroll-padding-inline: 24px; }
+  .m-rail > * { flex-basis: 60%; }
+}

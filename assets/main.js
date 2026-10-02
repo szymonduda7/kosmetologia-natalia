@@ -89,14 +89,17 @@
   function closeMenu() {
     if (!header) return;
     header.classList.remove('menu-open');
+    document.body.classList.remove('menu-locked');
     if (burger) burger.setAttribute('aria-expanded', 'false');
   }
   if (burger) {
     burger.addEventListener('click', function () {
       var open = header.classList.toggle('menu-open');
       burger.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('menu-locked', open);
       if (open) header.classList.add('is-scrolled');
     });
+    window.matchMedia('(min-width: 1024px)').addEventListener('change', function (mq) { if (mq.matches) closeMenu(); });
     document.querySelectorAll('.menu-panel a').forEach(function (a) { a.addEventListener('click', closeMenu); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
   }
@@ -116,7 +119,8 @@
 
   /* ---------- Muted autoplay videos in view ---------- */
   var autoVideos = document.querySelectorAll('video[data-autoplay]');
-  if ('IntersectionObserver' in window && !reduceMotion) {
+  var saveData = !!(navigator.connection && navigator.connection.saveData);
+  if ('IntersectionObserver' in window && !reduceMotion && !saveData) {
     var vo = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         var v = en.target;
@@ -130,7 +134,7 @@
   /* ---------- Product hover preview ---------- */
   document.querySelectorAll('.product').forEach(function (card) {
     var v = card.querySelector('video');
-    if (!v || reduceMotion) return;
+    if (!v || reduceMotion || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
     card.addEventListener('mouseenter', function () {
       card.classList.add('is-playing');
       var p = v.play(); if (p && p.catch) p.catch(function () {});
@@ -139,6 +143,50 @@
       card.classList.remove('is-playing');
       v.pause();
     });
+  });
+
+  /* ---------- Mobile rails: dots + keyboard ---------- */
+  var mobileMq = window.matchMedia('(max-width: 767px)');
+  document.querySelectorAll('[data-rail]').forEach(function (rail) {
+    var items = Array.prototype.slice.call(rail.children);
+    if (items.length < 2) return;
+    var dots = document.createElement('div');
+    dots.className = 'rail-dots';
+    var buttons = items.map(function (item, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', (i + 1) + ' / ' + items.length);
+      b.addEventListener('click', function () {
+        rail.scrollTo({ left: item.offsetLeft - rail.offsetLeft - parseFloat(getComputedStyle(rail).scrollPaddingLeft || 0), behavior: reduceMotion ? 'auto' : 'smooth' });
+      });
+      dots.appendChild(b);
+      return b;
+    });
+    rail.insertAdjacentElement('afterend', dots);
+
+    var ticking = false;
+    function update() {
+      ticking = false;
+      var railLeft = rail.getBoundingClientRect().left;
+      var best = 0, bestDist = Infinity;
+      items.forEach(function (item, i) {
+        var d = Math.abs(item.getBoundingClientRect().left - railLeft - 16);
+        if (d < bestDist) { bestDist = d; best = i; }
+      });
+      if (rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 4) best = items.length - 1;
+      buttons.forEach(function (b, i) { b.setAttribute('aria-current', String(i === best)); });
+    }
+    rail.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+
+    function applyMode() {
+      if (mobileMq.matches) rail.setAttribute('tabindex', '0');
+      else rail.removeAttribute('tabindex');
+      update();
+    }
+    mobileMq.addEventListener('change', applyMode);
+    applyMode();
   });
 
   /* ---------- Reels scroll buttons ---------- */
